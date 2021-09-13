@@ -68,8 +68,8 @@ int main(){
     ll root=a;
     subtree(root,0);             //返回 root 的 treesize
     odd_even(root,0,root,1);     //找出 root 的奇偶节点数 涉及变量：oddroot,evenroot,distoRoot[],totaldist[]
-    finaldist+=totaldist[root];   //
-    route(root,0);
+    finaldist+=totaldist[root];   
+    route(root,0);               //计算 root 的总路径
     printf("%lld\n",finaldist/2);
     return 0;
 }
